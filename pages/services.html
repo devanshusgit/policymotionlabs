@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | Policy Motion Labs</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;700&family=DM+Mono&family=Manrope:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-highest":"#353534","surface-container-high":"#2a2a2a","surface-container":"#201f1f","surface":"#131313","outline-variant":"#484554","surface-container-low":"#1c1b1b","error":"#ffb4ab","on-surface":"#e5e2e1","on-background":"#e5e2e1","primary":"#cbbeff","on-primary":"#320099","background":"#131313","tertiary":"#edc14f","on-surface-variant":"#cac4d6","primary-container":"#5b3ec4","secondary":"#7fd99c","surface-container-lowest":"#0e0e0e","outline":"#938e9f"},fontFamily:{"headline":["Newsreader","Cormorant Garamond","serif"],"body":["Manrope","DM Sans","sans-serif"],"label":["Space Grotesk","DM Mono","monospace"]},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"}}}}
+</script>
+<link rel="stylesheet" href="../css/shared.css"/>
+<link rel="stylesheet" href="../css/animations.css"/>
+<link rel="stylesheet" href="../css/interactive.css"/>
+</head>
+<body data-page="Services" class="bg-surface text-on-surface font-body">
+
+<nav class="fixed top-0 w-full z-50 bg-[#353534]/40 backdrop-blur-md shadow-[0_2px_40px_rgba(0,0,0,0.4)]">
+  <div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+    <a href="index.html"><img alt="Policy Motion Labs" class="h-16 md:h-20 w-auto object-contain brightness-[0] invert-[1] opacity-90 drop-shadow-[0_0_12px_rgba(255,255,255,0.3)]" src="../assets/PML_LOGO.png"/></a>
+    <div class="hidden md:flex items-center space-x-8">
+      <a class="nav-link text-[#9B99B8] hover:text-[#F0EEF8] transition-colors font-mono text-xs uppercase tracking-widest" href="index.html">Home</a>
+      <a class="nav-link text-[#9B99B8] hover:text-[#F0EEF8] transition-colors font-mono text-xs uppercase tracking-widest" href="about.html">About</a>
+      <a class="nav-link text-transparent bg-clip-text bg-gradient-to-r from-[#C9A030] to-[#7EA3FF] font-black border-b border-[#C9A030] pb-1 font-mono text-xs uppercase tracking-widest" href="services.html">Services</a>
+      <a class="nav-link text-[#9B99B8] hover:text-[#F0EEF8] transition-colors font-mono text-xs uppercase tracking-widest" href="how-it-works.html">How It Works</a>
+      <a class="nav-link text-[#9B99B8] hover:text-[#F0EEF8] transition-colors font-mono text-xs uppercase tracking-widest" href="show-reel.html">Show Reel</a>
+      <a class="nav-link text-[#9B99B8] hover:text-[#F0EEF8] transition-colors font-mono text-xs uppercase tracking-widest" href="contact.html">Contact Us</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="vendor-register.html" class="btn-interactive bg-gradient-pml text-white px-6 py-2 rounded-lg font-bold text-sm hover:scale-95 transition-all hidden md:inline-block">Register as a Vendor</a>
+    </div>
+  </div>
+</nav>
+
+<main class="pt-32">
+  <!-- Hero -->
+  <section class="px-8 max-w-screen-2xl mx-auto mb-32">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+      <div class="lg:col-span-8" data-animate="fade-in">
+        <span class="font-label text-[#C9A030] uppercase tracking-[0.3em] text-xs block mb-6">Capabilities Portfolio</span>
+        <h1 class="font-headline text-4xl md:text-7xl lg:text-8xl leading-[1.1] text-on-surface mb-8">Six High-Impact Formats for <span class="italic text-gradient-pml">Government</span> Communication</h1>
+      </div>
+      <div class="lg:col-span-4 pb-4" data-animate="fade-in">
+        <p class="text-xl text-[#9B99B8] font-body leading-relaxed">We transform complex policy into citizen-first, platform-native content. No bureaucratese—just clear, moving narratives.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Service Cards -->
+  <section class="px-8 max-w-screen-2xl mx-auto mb-40">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-animate-stagger="100">
+      <div class="glass-card p-8 flex flex-col justify-between hover:ring-1 hover:ring-[#1A7B47]/20 transition-all duration-500" data-animate="slide-up">
+        <div>
+          <div class="flex justify-between items-start mb-12">
+            <span class="material-symbols-outlined text-[#1A7B47] text-4xl">movie</span>
+            <span class="font-label text-[10px] text-[#9B99B8] border border-[#484554]/30 px-2 py-1">SML-01</span>
+          </div>
+          <h3 class="font-headline text-3xl text-on-surface mb-4">Scheme Explainer Films</h3>
+          <p class="text-[#9B99B8] font-body mb-8">Comprehensive narratives for major social initiatives and government schemes.</p>
+          <div class="space-y-4 border-t border-[#484554]/10 pt-6">
+            <div><span class="font-label text-[10px] uppercase text-[#C9A030] block mb-1">Format</span><span class="text-sm text-on-surface">2-5 min, 10+ languages</span></div>
+            <div><span class="font-label text-[10px] uppercase text-[#C9A030] block mb-1">Distribution</span><span class="text-sm text-on-surface">Web, Cinema, YouTube</span></div>
+            <div><span class="font-label text-[10px] uppercase text-[#C9A030] block mb-1">Best For</span><span class="text-sm text-on-surface">Policy awareness, enrollment drives</span></div>
+          </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-[#484554]/10">
+          <span class="font-label text-[10px] uppercase text-[#9B99B8] block mb-1">Example Use</span>
+          <span class="text-xs text-on-surface italic">"Simplifying PM-Kisan for 140M farmers"</span>
+        </div>
+      </div>
+      <div class="glass-card p-8 flex flex-col justify-between hover:ring-1 hover:ring-[#1A7B47]/20 transition-all duration-500" data-animate="slide-up">
+        <div>
+          <div class="flex justify-between items-start mb-12">
+            <span class="material-symbols-outlined text-[#1A7B47] text-4xl">settings_voice</span>
+            <span class="font-label text-[10px] text-[#9B99B8] border border-[#484554]/30 px-2 py-1">SML-02</span>
+          </div>
+          <h3 class="font-headline text-3xl text-on-surface mb-4">Audio Spots & Jingles</h3>
+          <p class="text-[#9B99B8] font-body mb-8">High-frequency audio content for mass rural and urban penetration.</p>
+          <div class="space-y-4 border-t border-[#484554]/10 pt-6">
+            <div><span class="font-label text-[10px] uppercase text-[#C9A030] block mb-1">Format</span><span class="text-sm text-on-surface">30-60s, 48-hr turnaround</span></div>
+            <div><span class="font-label text-[10px] uppercase text-[#C9A030] block mb-1">Distribution</span><span class="text-sm text-on-surface">Radio, Community FM, PA Systems</span></div>
+            <div><span class="font-label text-[10px] uppercase text-[#C9A030] block mb-1">Best For</span><span class="text-sm text-on-surface">Public health alerts, local announcements</span></div>
+          </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-[#484554]/10">
+          <span class="font-label text-[10px] uppercase text-[#9B99B8] block mb-1">Example Use</span>
+          <span class="text-xs text-on-surface italic">"Pulse Polio regional audio jingles"</span>
+        </div>
+      </div>
+      <div class="glass-card p-8 flex flex-col justify-between hover:ring-1 hover:ring-[#1A7B47]/20 transition-all duration-500" data-animate="slide-up">
+        <div>
+          <div class="flex justify-between items-start mb-12">
+            <span class="material-symbols-outlined text-[#1A7B47] text-4xl">smartphone</span>
+            <span class="font-label text-[10px] text-[#9B99B8] border border-[#484554]/30 px-2 py-1">SML-03</span>
+          </div>
+          <h3 class="font-headline text-3xl text-on-surface mb-4">Social Media Reels</h3>
+          <p class="text-[#9B99B8] font-body mb-8">Short-form vertical video optimized for the scroll-first generation.</p>
+          <div class="space-y-4 border-t border-[#484554]/10 pt-6">
+            <div><span class="font-label text-[10px] uppercase text-[#C9A030] block mb-1">Format</span><span class="text-sm text-on-surface">9:16 Vertical, 15-60s</span></div>
+            <div><span class="font-label text-[10px] uppercase text-[#C9A030] block mb-1">Distribution</span><span class="text-sm text-on-surface">Instagram, YouTube Shorts, Moj</span></div>
+            <div><span class="font-label text-[10px] uppercase text-[#C9A030] block mb-1">Best For</span><span class="text-sm text-on-surface">Youth engagement, myth-busting</span></div>
+          </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-[#484554]/10">
+          <span class="font-label text-[10px] uppercase text-[#9B99B8] block mb-1">Example Use</span>
+          <span class="text-xs text-on-surface italic">"Digital India feature highlights"</span>
+        </div>
+      </div>
+      <div class="glass-card p-8 flex flex-col justify-between hover:ring-1 hover:ring-[#1A7B47]/20 transition-all duration-500" data-animate="slide-up">
+        <div>
+          <div class="flex justify-between items-start mb-12">
+            <span class="material-symbols-outlined text-[#1A7B47] text-4xl">connected_tv</span>
+            <span class="font-label text-[10px] text-[#9B99B8] border border-[#484554]/30 px-2 py-1">SML-04</span>
+          </div>
+          <h3 class="font-headline text-3xl text-on-surface mb-4">Doordarshan Packages</h3>
+          <p class="text-[#9B99B8] font-body mb-8">Broadcasting solutions strictly adhering to public service television standards.</p>
+          <div class="space-y-4 border-t border-[#484554]/10 pt-6">
+            <div><span class="font-label text-[10px] uppercase text-[#C9A030] block mb-1">Format</span><span class="text-sm text-on-surface">Full HD DD Regional Specs</span></div>
+            <div><span class="font-label text-[10px] uppercase text-[#C9A030] block mb-1">Distribution</span><span class="text-sm text-on-surface">DD National, DD India, DD News</span></div>
+            <div><span class="font-label text-[10px] uppercase text-[#C9A030] block mb-1">Best For</span><span class="text-sm text-on-surface">Nation-wide broadcast campaigns</span></div>
+          </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-[#484554]/10">
+          <span class="font-label text-[10px] uppercase text-[#9B99B8] block mb-1">Example Use</span>
+          <span class="text-xs text-on-surface italic">"Weekly Policy Wrap-ups for DD News"</span>
+        </div>
+      </div>
+      <div class="glass-card p-8 flex flex-col justify-between hover:ring-1 hover:ring-[#1A7B47]/20 transition-all duration-500" data-animate="slide-up">
+        <div>
+          <div class="flex justify-between items-start mb-12">
+            <span class="material-symbols-outlined text-[#1A7B47] text-4xl">shield</span>
+            <span class="font-label text-[10px] text-[#9B99B8] border border-[#484554]/30 px-2 py-1">SML-05</span>
+          </div>
+          <h3 class="font-headline text-3xl text-on-surface mb-4">Defence Training Films</h3>
+          <p class="text-[#9B99B8] font-body mb-8">Highly secure, protocol-driven visual training for strategic agencies.</p>
+          <div class="space-y-4 border-t border-[#484554]/10 pt-6">
+            <div><span class="font-label text-[10px] uppercase text-[#C9A030] block mb-1">Format</span><span class="text-sm text-on-surface">Classified-compatible delivery</span></div>
+            <div><span class="font-label text-[10px] uppercase text-[#C9A030] block mb-1">Distribution</span><span class="text-sm text-on-surface">Intranets, Secured Hubs</span></div>
+            <div><span class="font-label text-[10px] uppercase text-[#C9A030] block mb-1">Best For</span><span class="text-sm text-on-surface">SOP training, tactical briefings</span></div>
+          </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-[#484554]/10">
+          <span class="font-label text-[10px] uppercase text-[#9B99B8] block mb-1">Example Use</span>
+          <span class="text-xs text-on-surface italic">"Confidential SOP for border logistics"</span>
+        </div>
+      </div>
+      <div class="glass-card p-8 flex flex-col justify-between hover:ring-1 hover:ring-[#1A7B47]/20 transition-all duration-500" data-animate="slide-up">
+        <div>
+          <div class="flex justify-between items-start mb-12">
+            <span class="material-symbols-outlined text-[#1A7B47] text-4xl">auto_awesome_motion</span>
+            <span class="font-label text-[10px] text-[#9B99B8] border border-[#484554]/30 px-2 py-1">SML-06</span>
+          </div>
+          <h3 class="font-headline text-3xl text-on-surface mb-4">Campaign Brand Identity</h3>
+          <p class="text-[#9B99B8] font-body mb-8">Visual systems and motion templates that define the 'look' of a scheme.</p>
+          <div class="space-y-4 border-t border-[#484554]/10 pt-6">
+            <div><span class="font-label text-[10px] uppercase text-[#C9A030] block mb-1">Format</span><span class="text-sm text-on-surface">Brand Guides, Motion Toolkits</span></div>
+            <div><span class="font-label text-[10px] uppercase text-[#C9A030] block mb-1">Distribution</span><span class="text-sm text-on-surface">Multi-agency assets</span></div>
+            <div><span class="font-label text-[10px] uppercase text-[#C9A030] block mb-1">Best For</span><span class="text-sm text-on-surface">Consistent long-term messaging</span></div>
+          </div>
+        </div>
+        <div class="mt-8 pt-6 border-t border-[#484554]/10">
+          <span class="font-label text-[10px] uppercase text-[#9B99B8] block mb-1">Example Use</span>
+          <span class="text-xs text-on-surface italic">"Unified branding for Swachh Bharat 2.0"</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pipeline -->
+  <section class="bg-surface-container-low py-32 px-8">
+    <div class="max-w-4xl mx-auto text-center" data-animate="fade-in">
+      <span class="material-symbols-outlined text-[#C9A030] text-5xl mb-8 block">hub</span>
+      <h2 class="font-headline text-4xl md:text-5xl text-on-surface mb-8">Integrated Production Pipeline</h2>
+      <p class="text-xl md:text-2xl text-[#9B99B8] font-body leading-relaxed mb-12">Our <span class="text-[#F0EEF8]">One Brief, Every Format</span> philosophy ensures a single strategic directive translates into a synchronized multi-channel campaign within <span class="text-[#1A7B47] font-mono">72 Hours</span>.</p>
+      <a href="how-it-works.html" class="inline-flex items-center gap-2 border-b border-[#C9A030] pb-2 text-[#C9A030] font-label text-sm uppercase tracking-widest hover:text-[#F0EEF8] transition-colors">View Pipeline Details <span class="material-symbols-outlined text-sm">arrow_forward</span></a>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-40 px-8 max-w-screen-xl mx-auto text-center">
+    <h2 class="font-headline text-5xl md:text-7xl mb-12">Ready to start <span class="italic">your</span> project?</h2>
+    <div class="flex flex-col md:flex-row justify-center items-center gap-6">
+      <a href="contact.html" class="btn-interactive bg-gradient-pml text-[#F0EEF8] px-10 py-5 text-lg font-bold rounded-lg hover:shadow-[0_0_30px_rgba(26,123,71,0.3)] transition-all">Request a Pilot</a>
+      <a href="show-reel.html" class="btn-interactive font-label text-sm uppercase tracking-widest border border-[#484554]/30 px-10 py-5 rounded-lg hover:bg-surface-container-high transition-all text-[#F0EEF8]">Watch Show Reel</a>
+    </div>
+  </section>
+</main>
+
+<footer class="bg-[#131313] w-full">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 border-t border-[#484554]/15 max-w-screen-2xl mx-auto">
+    <div>
+      <img alt="Policy Motion Labs" class="h-24 md:h-32 w-auto object-contain mb-6" src="../assets/PML_LOGO.png"/>
+      <p class="text-[#9B99B8] text-sm leading-relaxed max-w-xs">Advancing democratic communication through high-fidelity storytelling and indigenous technology.</p>
+    </div>
+    <div>
+      <h6 class="font-mono text-sm font-bold uppercase tracking-widest text-[#5B3EC4] mb-6">Quick Links</h6>
+      <div class="flex flex-col space-y-3">
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="index.html">Home</a>
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="about.html">About</a>
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="services.html">Services</a>
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="how-it-works.html">How It Works</a>
+      </div>
+    </div>
+    <div>
+      <h6 class="font-mono text-sm font-bold uppercase tracking-widest text-[#5B3EC4] mb-6">More</h6>
+      <div class="flex flex-col space-y-3">
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="show-reel.html">Show Reel</a>
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="contact.html">Contact Us</a>
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="vendor-register.html">Register as a Vendor</a>
+      </div>
+    </div>
+    <div>
+      <h6 class="font-mono text-sm font-bold uppercase tracking-widest text-[#5B3EC4] mb-6">Registered Office</h6>
+      <p class="text-[#9B99B8] text-sm leading-relaxed">2nd Floor, Plot 264-265,<br/>Vaswani Chambers, Worli Colony,<br/>Mumbai – 400030</p>
+      <div class="mt-4 space-y-2">
+        <a href="tel:+919372785258" class="flex items-center gap-2 text-[#9B99B8] hover:text-[#F0EEF8] text-sm"><span class="material-symbols-outlined text-base text-[#5B3EC4]">call</span>+91 93727 85258</a>
+        <a href="mailto:info@policymotionlabs.com" class="flex items-center gap-2 text-[#9B99B8] hover:text-[#F0EEF8] text-sm"><span class="material-symbols-outlined text-base text-[#5B3EC4]">mail</span>info@policymotionlabs.com</a>
+        <div class="flex items-start gap-2 text-[#9B99B8] text-sm mt-2"><span class="material-symbols-outlined text-base text-[#5B3EC4]">schedule</span>Monday - Friday<br/>10 AM - 7 PM</div>
+      </div>
+    </div>
+  </div>
+  <div class="px-12 py-8 bg-[#0e0e0e] text-center">
+    <p class="text-[10px] font-mono text-[#9B99B8] uppercase tracking-[0.2em]">© 2026 Policy Motion Labs. Made in Bharat.</p>
+  </div>
+</footer>
+<script src="../js/shared-standalone.js"></script>
+<script type="module" src="../js/shared.js"></script>
+<script src="../js/interactive.js"></script>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Show Reel | Policy Motion Labs</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Manrope:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-highest":"#353534","surface-container-high":"#2a2a2a","surface-container":"#201f1f","surface":"#131313","outline-variant":"#484554","surface-container-low":"#1c1b1b","error":"#ffb4ab","on-surface":"#e5e2e1","on-background":"#e5e2e1","primary":"#cbbeff","on-primary":"#320099","background":"#131313","tertiary":"#edc14f","on-surface-variant":"#cac4d6","primary-container":"#5b3ec4","secondary":"#7fd99c","surface-container-lowest":"#0e0e0e","outline":"#938e9f"},fontFamily:{"headline":["Newsreader","Cormorant Garamond","serif"],"body":["Manrope","DM Sans","sans-serif"],"label":["Space Grotesk","DM Mono","monospace"]},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"}}}}
+</script>
+<link rel="stylesheet" href="../css/shared.css"/>
+<link rel="stylesheet" href="../css/animations.css"/>
+<link rel="stylesheet" href="../css/interactive.css"/>
+</head>
+<body data-page="Show Reel" class="bg-surface text-on-surface font-body">
+
+<nav class="fixed top-0 w-full z-50 bg-[#353534]/40 backdrop-blur-md shadow-[0_2px_40px_rgba(0,0,0,0.4)]">
+  <div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+    <a href="index.html"><img alt="Policy Motion Labs" class="h-16 md:h-20 w-auto object-contain brightness-[0] invert-[1] opacity-90 drop-shadow-[0_0_12px_rgba(255,255,255,0.3)]" src="../assets/PML_LOGO.png"/></a>
+    <div class="hidden md:flex items-center space-x-8">
+      <a class="nav-link text-[#9B99B8] hover:text-[#F0EEF8] transition-colors font-mono text-xs uppercase tracking-widest" href="index.html">Home</a>
+      <a class="nav-link text-[#9B99B8] hover:text-[#F0EEF8] transition-colors font-mono text-xs uppercase tracking-widest" href="about.html">About</a>
+      <a class="nav-link text-[#9B99B8] hover:text-[#F0EEF8] transition-colors font-mono text-xs uppercase tracking-widest" href="services.html">Services</a>
+      <a class="nav-link text-[#9B99B8] hover:text-[#F0EEF8] transition-colors font-mono text-xs uppercase tracking-widest" href="how-it-works.html">How It Works</a>
+      <a class="nav-link text-transparent bg-clip-text bg-gradient-to-r from-[#C9A030] to-[#7EA3FF] font-black border-b border-[#C9A030] pb-1 font-mono text-xs uppercase tracking-widest" href="show-reel.html">Show Reel</a>
+      <a class="nav-link text-[#9B99B8] hover:text-[#F0EEF8] transition-colors font-mono text-xs uppercase tracking-widest" href="contact.html">Contact Us</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="vendor-register.html" class="btn-interactive bg-gradient-pml text-white px-6 py-2 rounded-lg font-bold text-sm hover:scale-95 transition-all hidden md:inline-block">Register as a Vendor</a>
+    </div>
+  </div>
+</nav>
+
+<main class="pt-24">
+  <!-- Hero -->
+  <section class="relative min-h-[50vh] flex items-center justify-center px-8 py-32 overflow-hidden bg-[#0A0A0A]">
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-[#5B3EC4] hero-blob rounded-full"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#1A7B47] hero-blob rounded-full"></div>
+    <div class="relative z-10 text-center max-w-4xl">
+      <span class="font-label text-[#C9A030] uppercase tracking-[0.3em] text-xs mb-6 block">Our Work</span>
+      <h1 class="font-headline text-5xl md:text-8xl font-bold text-[#F0EEF8] leading-tight mb-8">Policy in Motion</h1>
+      <p class="text-[#9B99B8] text-xl max-w-2xl mx-auto leading-relaxed">A curated selection of our most impactful governance communication campaigns — from national health drives to defence recruitment films.</p>
+    </div>
+  </section>
+
+  <!-- Coming Soon -->
+  <section class="py-24 px-8 max-w-screen-xl mx-auto">
+    <div class="aspect-video bg-[#131313] glass-card rounded-2xl overflow-hidden relative flex flex-col items-center justify-center p-8 text-center" data-animate="fade-in">
+      <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,#5B3EC4_0%,transparent_50%)] opacity-20"></div>
+      
+      <div class="relative z-10">
+        <div class="w-16 h-16 md:w-20 md:h-20 rounded-full border border-[#484554]/50 flex items-center justify-center mb-6 mx-auto bg-[#353534]/50 backdrop-blur-sm">
+          <span class="material-symbols-outlined text-[#F0EEF8] text-3xl md:text-4xl" style="font-variation-settings:'FILL' 1">play_disabled</span>
+        </div>
+        <span class="font-label text-[#C9A030] uppercase tracking-[0.3em] text-xs mb-3 block">Master Reel</span>
+        <h2 class="font-headline text-4xl md:text-6xl text-[#F0EEF8] italic mb-4">Coming Soon</h2>
+        <p class="text-[#9B99B8] font-body max-w-md mx-auto">We are currently curating and exporting our latest showcase in pristine 4K. Stay tuned for an updated overview of our operational highlights.</p>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Authentic Credentials -->
+  <section class="py-16 px-8 bg-surface-container-low border-y border-[#484554]/20">
+    <div class="max-w-screen-2xl mx-auto flex flex-col md:flex-row flex-wrap justify-around items-center gap-12 md:gap-4">
+      <div class="flex items-center gap-4 group text-center md:text-left">
+        <span class="material-symbols-outlined text-[#cbbeff] text-4xl opacity-90 transition-transform group-hover:scale-110" style="font-variation-settings:'FILL' 1">workspace_premium</span>
+        <div class="text-[#F0EEF8]">
+          <h5 class="font-bold text-base leading-tight uppercase tracking-wider">GEM Registered</h5>
+          <p class="font-label text-[10px] text-[#9B99B8] uppercase tracking-widest mt-1">Government e-Marketplace</p>
+        </div>
+      </div>
+      <div class="hidden lg:block w-px h-16 bg-[#484554]/30"></div>
+      
+      <div class="flex items-center gap-4 group text-center md:text-left">
+        <span class="material-symbols-outlined text-[#7fd99c] text-4xl opacity-90 transition-transform group-hover:scale-110" style="font-variation-settings:'FILL' 1">flight</span>
+        <div class="text-[#F0EEF8]">
+          <h5 class="font-bold text-base leading-tight uppercase tracking-wider">DGCA Drone Ops Pilot</h5>
+          <p class="font-label text-[10px] text-[#9B99B8] uppercase tracking-widest mt-1">Certified Filming</p>
+        </div>
+      </div>
+      <div class="hidden lg:block w-px h-16 bg-[#484554]/30"></div>
+      
+      <div class="flex items-center gap-4 group text-center md:text-left">
+        <span class="material-symbols-outlined text-[#edc14f] text-4xl opacity-90 transition-transform group-hover:scale-110" style="font-variation-settings:'FILL' 1">rocket_launch</span>
+        <div class="text-[#F0EEF8]">
+          <h5 class="font-bold text-base leading-tight uppercase tracking-wider">DPIIT Startup India</h5>
+          <p class="font-label text-[10px] text-[#9B99B8] uppercase tracking-widest mt-1">Innovation Recognized</p>
+        </div>
+      </div>
+      <div class="hidden lg:block w-px h-16 bg-[#484554]/30"></div>
+
+      <div class="flex items-center gap-4 group text-center md:text-left">
+        <span class="material-symbols-outlined text-[#5B3EC4] text-4xl opacity-90 transition-transform group-hover:scale-110" style="font-variation-settings:'FILL' 1">shield_locked</span>
+        <div class="text-[#F0EEF8]">
+          <h5 class="font-bold text-base leading-tight uppercase tracking-wider">Sovereign Data</h5>
+          <p class="font-label text-[10px] text-[#9B99B8] uppercase tracking-widest mt-1">Incorporated in India</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-32 px-8 text-center">
+    <h2 class="font-headline text-4xl text-[#F0EEF8] mb-6" data-animate="fade-in">Want to see your campaign here?</h2>
+    <p class="text-[#9B99B8] mb-10 max-w-xl mx-auto" data-animate="fade-in">Let's build something that moves people — and moves policy forward.</p>
+    <a href="contact.html" class="btn-interactive inline-block bg-gradient-pml text-white px-10 py-4 rounded-lg font-bold text-lg hover:scale-105 transition-transform">Start a Project</a>
+  </section>
+</main>
+
+<footer class="bg-[#131313] w-full">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 border-t border-[#484554]/15 max-w-screen-2xl mx-auto">
+    <div>
+      <img alt="Policy Motion Labs" class="h-24 md:h-32 w-auto object-contain mb-6" src="../assets/PML_LOGO.png"/>
+      <p class="text-[#9B99B8] text-sm leading-relaxed max-w-xs">Advancing democratic communication through high-fidelity storytelling and indigenous technology.</p>
+    </div>
+    <div>
+      <h6 class="font-mono text-sm font-bold uppercase tracking-widest text-[#5B3EC4] mb-6">Quick Links</h6>
+      <div class="flex flex-col space-y-3">
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="index.html">Home</a>
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="about.html">About</a>
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="services.html">Services</a>
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="how-it-works.html">How It Works</a>
+      </div>
+    </div>
+    <div>
+      <h6 class="font-mono text-sm font-bold uppercase tracking-widest text-[#5B3EC4] mb-6">More</h6>
+      <div class="flex flex-col space-y-3">
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="show-reel.html">Show Reel</a>
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="contact.html">Contact Us</a>
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="vendor-register.html">Register as a Vendor</a>
+      </div>
+    </div>
+    <div>
+      <h6 class="font-mono text-sm font-bold uppercase tracking-widest text-[#5B3EC4] mb-6">Registered Office</h6>
+      <p class="text-[#9B99B8] text-sm leading-relaxed">2nd Floor, Plot 264-265,<br/>Vaswani Chambers, Worli Colony,<br/>Mumbai – 400030</p>
+      <div class="mt-4 space-y-2">
+        <a href="tel:+919372785258" class="flex items-center gap-2 text-[#9B99B8] hover:text-[#F0EEF8] text-sm"><span class="material-symbols-outlined text-base text-[#5B3EC4]">call</span>+91 93727 85258</a>
+        <a href="mailto:info@policymotionlabs.com" class="flex items-center gap-2 text-[#9B99B8] hover:text-[#F0EEF8] text-sm"><span class="material-symbols-outlined text-base text-[#5B3EC4]">mail</span>info@policymotionlabs.com</a>
+        <div class="flex items-start gap-2 text-[#9B99B8] text-sm mt-2"><span class="material-symbols-outlined text-base text-[#5B3EC4]">schedule</span>Monday - Friday<br/>10 AM - 7 PM</div>
+      </div>
+    </div>
+  </div>
+  <div class="px-12 py-8 bg-[#0e0e0e] text-center">
+    <p class="text-[10px] font-mono text-[#9B99B8] uppercase tracking-[0.2em]">© 2026 Policy Motion Labs. Made in Bharat.</p>
+  </div>
+</footer>
+<script src="../js/shared-standalone.js"></script>
+<script type="module" src="../js/shared.js"></script>
+<script src="../js/interactive.js"></script>
+</body>
+</html>

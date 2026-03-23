@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Policy Motion Labs | Making Governance Visible</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;700&family=DM+Mono&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Manrope:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-highest":"#353534","surface-container-high":"#2a2a2a","surface-container":"#201f1f","surface":"#131313","outline-variant":"#484554","surface-container-low":"#1c1b1b","error":"#ffb4ab","on-surface":"#e5e2e1","on-background":"#e5e2e1","primary":"#cbbeff","on-primary":"#320099","background":"#131313","tertiary":"#edc14f","on-surface-variant":"#cac4d6","primary-container":"#5b3ec4","secondary":"#7fd99c","surface-container-lowest":"#0e0e0e","outline":"#938e9f"},fontFamily:{"headline":["Newsreader","Cormorant Garamond","serif"],"body":["Manrope","DM Sans","sans-serif"],"label":["Space Grotesk","DM Mono","monospace"]},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"}}}}
+</script>
+<link rel="stylesheet" href="../css/shared.css"/>
+<link rel="stylesheet" href="../css/animations.css"/>
+<link rel="stylesheet" href="../css/interactive.css"/>
+</head>
+<body class="bg-background text-on-background font-body">
+
+<!-- NAV -->
+<nav class="fixed top-0 w-full z-50 bg-[#353534]/40 backdrop-blur-md shadow-[0_2px_40px_rgba(0,0,0,0.4)]">
+  <div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+    <a href="index.html"><img alt="Policy Motion Labs" class="h-16 md:h-20 w-auto object-contain brightness-[0] invert-[1] opacity-90 drop-shadow-[0_0_12px_rgba(255,255,255,0.3)]" src="../assets/PML_LOGO.png"/></a>
+    <div class="hidden md:flex items-center space-x-8">
+      <a class="nav-link text-transparent bg-clip-text bg-gradient-to-r from-[#C9A030] to-[#7EA3FF] font-black border-b border-[#C9A030] pb-1 font-mono text-xs uppercase tracking-widest" href="index.html">Home</a>
+      <a class="nav-link text-[#9B99B8] font-mono text-xs uppercase tracking-widest hover:text-[#F0EEF8] transition-colors" href="about.html">About</a>
+      <a class="nav-link text-[#9B99B8] font-mono text-xs uppercase tracking-widest hover:text-[#F0EEF8] transition-colors" href="services.html">Services</a>
+      <a class="nav-link text-[#9B99B8] font-mono text-xs uppercase tracking-widest hover:text-[#F0EEF8] transition-colors" href="how-it-works.html">How It Works</a>
+      <a class="nav-link text-[#9B99B8] font-mono text-xs uppercase tracking-widest hover:text-[#F0EEF8] transition-colors" href="show-reel.html">Show Reel</a>
+      <a class="nav-link text-[#9B99B8] font-mono text-xs uppercase tracking-widest hover:text-[#F0EEF8] transition-colors" href="contact.html">Contact Us</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="vendor-register.html" class="btn-interactive bg-gradient-pml text-white px-6 py-2 rounded-lg font-bold text-sm hover:scale-95 transition-all hidden md:inline-block">Register as a Vendor</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <!-- Hero -->
+  <section class="relative min-h-screen flex items-center justify-center overflow-hidden bg-[#0A0A0A] pt-20">
+    <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-[#5B3EC4] hero-blob rounded-full" data-parallax="0.5"></div>
+    <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-[#1A7B47] hero-blob rounded-full" data-parallax="0.5"></div>
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] bg-[#C9A030]/10 hero-blob rounded-full" data-parallax="0.5"></div>
+    <div class="relative z-10 max-w-5xl px-8 text-center md:mt-16">
+      <span class="font-label text-xs uppercase tracking-[0.3em] font-bold text-[#C9A030] mb-8 block pml-hero-element" style="opacity:0;">Communications for the Republic</span>
+      <h1 class="font-headline text-5xl md:text-8xl lg:text-9xl font-bold text-[#F0EEF8] leading-tight mb-8" id="pml-hero-h1">Making Governance Visible.</h1>
+      <p class="font-body text-xl md:text-2xl text-[#9B99B8] max-w-3xl mx-auto mb-12 leading-relaxed pml-hero-element" style="opacity:0;">India’s first AI-powered, technology-driven media studio built exclusively for government communication, bridging the gap between high-level policy and grassroots awareness.</p>
+      <div class="flex flex-col md:flex-row items-center justify-center gap-6 pml-hero-element" style="opacity:0;">
+        <a href="how-it-works.html" class="btn-interactive border border-[#5B3EC4] text-[#F0EEF8] px-8 py-4 rounded-md font-bold text-lg hover:bg-[#5B3EC4]/10 transition-all">See How It Works</a>
+        <a href="vendor-register.html" class="btn-interactive border border-[#C9A030] text-[#C9A030] px-8 py-4 rounded-md font-bold text-lg hover:bg-[#C9A030]/10 transition-all">Register as a Vendor</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem Strip -->
+  <section class="py-24 px-8 bg-surface-container-low">
+    <div class="max-w-screen-2xl mx-auto">
+      <p class="font-label text-[#C9A030] uppercase tracking-[0.3em] text-sm mb-12 font-bold" data-animate="fade-in">The Cost of Silence</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8" data-animate-stagger="100">
+        <div class="glass-card p-10 border-l-4 border-[#5B3EC4]" data-animate="slide-up">
+          <h3 class="font-label text-4xl font-bold text-[#C9A030] mb-2">₹8,000 Cr+</h3>
+          <p class="font-body text-[#F0EEF8] text-lg">Spent annually on traditional awareness</p>
+        </div>
+        <div class="glass-card p-10 border-l-4 border-[#5B3EC4]" data-animate="slide-up">
+          <h3 class="font-label text-4xl font-bold text-[#C9A030] mb-2">60%+</h3>
+          <p class="font-body text-[#F0EEF8] text-lg">Citizens unaware of direct benefit schemes</p>
+        </div>
+        <div class="glass-card p-10 border-l-4 border-[#5B3EC4]" data-animate="slide-up">
+          <h3 class="font-label text-4xl font-bold text-[#C9A030] mb-2">12%</h3>
+          <p class="font-body text-[#F0EEF8] text-lg">Native digital reach of current government handles</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Bar -->
+  <section class="bg-surface-container-lowest py-16 px-8">
+    <div class="max-w-screen-2xl mx-auto flex flex-wrap justify-between items-center gap-12">
+      <div class="text-center"><h5 class="font-headline text-4xl text-[#C9A030] mb-1">50+</h5><p class="font-label text-[10px] text-[#9B99B8] uppercase tracking-widest">Creative Assets Delivered</p></div>
+      <div class="text-center"><h5 class="font-headline text-4xl text-[#C9A030] mb-1">5+</h5><p class="font-label text-[10px] text-[#9B99B8] uppercase tracking-widest">Strategic Collaborations</p></div>
+      <div class="text-center"><h5 class="font-headline text-4xl text-[#C9A030] mb-1">8+</h5><p class="font-label text-[10px] text-[#9B99B8] uppercase tracking-widest">Languages Adapted</p></div>
+      <div class="text-center"><h5 class="font-headline text-4xl text-[#C9A030] mb-1">3L+</h5><p class="font-label text-[10px] text-[#9B99B8] uppercase tracking-widest">Impressions Generated</p></div>
+      <div class="text-center"><h5 class="font-headline text-4xl text-[#C9A030] mb-1">24/7</h5><p class="font-label text-[10px] text-[#9B99B8] uppercase tracking-widest">Command Center Support</p></div>
+    </div>
+  </section>
+
+  <!-- Services Preview -->
+  <section class="py-32 px-8">
+    <div class="max-w-screen-2xl mx-auto">
+      <div class="mb-20 text-center">
+        <h2 class="font-headline text-5xl text-[#F0EEF8] mb-6" data-animate="fade-in">Institutional Mediums</h2>
+        <div class="h-1 w-24 bg-gradient-pml mx-auto" data-animate="fade-in"></div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" data-animate-stagger="100">
+        <div class="glass-card p-10 hover:-translate-y-2 transition-transform duration-500" data-animate="slide-up">
+          <span class="material-symbols-outlined text-[#5B3EC4] text-4xl mb-6 block">movie_filter</span>
+          <h3 class="font-headline text-2xl text-[#F0EEF8] mb-4">Scheme Explainer Films</h3>
+          <p class="text-[#9B99B8] font-body leading-relaxed mb-6">High-fidelity cinematics breaking down complex legislation into actionable citizen insights.</p>
+          <a class="font-label text-[#C9A030] text-xs uppercase tracking-widest flex items-center gap-2" href="services.html">Explore <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
+        </div>
+        <div class="glass-card p-10 hover:-translate-y-2 transition-transform duration-500" data-animate="slide-up">
+          <span class="material-symbols-outlined text-[#5B3EC4] text-4xl mb-6 block">sensors</span>
+          <h3 class="font-headline text-2xl text-[#F0EEF8] mb-4">Audio Spots</h3>
+          <p class="text-[#9B99B8] font-body leading-relaxed mb-6">Localized community radio and podcast content optimized for rural India's acoustic landscape.</p>
+          <a class="font-label text-[#C9A030] text-xs uppercase tracking-widest flex items-center gap-2" href="services.html">Explore <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
+        </div>
+        <div class="glass-card p-10 hover:-translate-y-2 transition-transform duration-500" data-animate="slide-up">
+          <span class="material-symbols-outlined text-[#5B3EC4] text-4xl mb-6 block">public</span>
+          <h3 class="font-headline text-2xl text-[#F0EEF8] mb-4">Social Media Command</h3>
+          <p class="text-[#9B99B8] font-body leading-relaxed mb-6">Data-driven viral loops that bypass traditional media noise to reach target beneficiaries directly.</p>
+          <a class="font-label text-[#C9A030] text-xs uppercase tracking-widest flex items-center gap-2" href="services.html">Explore <span class="material-symbols-outlined text-xs">arrow_forward</span></a>
+        </div>
+      </div>
+      <div class="text-center mt-12">
+        <a href="services.html" class="btn-interactive inline-block border border-[#5B3EC4] text-[#F0EEF8] px-8 py-3 rounded-lg font-bold hover:bg-[#5B3EC4]/10 transition-all">View All Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-32 px-8 bg-surface-container-low">
+    <div class="max-w-5xl mx-auto glass-card p-16 rounded-2xl text-center relative overflow-hidden" data-animate="fade-in">
+      <div class="absolute inset-0 bg-gradient-to-tr from-[#5B3EC4]/10 to-transparent pointer-events-none"></div>
+      <h2 class="font-headline text-4xl md:text-5xl text-[#F0EEF8] leading-tight mb-8">Every day a citizen doesn't know about your scheme is a day that scheme fails.</h2>
+      <p class="font-body text-[#9B99B8] text-lg mb-12 max-w-2xl mx-auto">Transform your administrative intent into measurable public awareness.</p>
+      <a href="contact.html" class="btn-interactive inline-block bg-[#1A7B47] text-white px-12 py-5 rounded-md font-bold text-xl hover:scale-105 transition-transform shadow-2xl shadow-[#1A7B47]/20">Schedule a Discovery Call</a>
+    </div>
+  </section>
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-[#131313] w-full">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 border-t border-[#484554]/15 max-w-screen-2xl mx-auto">
+    <div>
+      <img alt="Policy Motion Labs" class="h-24 md:h-32 w-auto object-contain mb-6" src="../assets/PML_LOGO.png"/>
+      <p class="text-[#9B99B8] text-sm leading-relaxed max-w-xs">Advancing democratic communication through high-fidelity storytelling and indigenous technology.</p>
+    </div>
+    <div>
+      <h6 class="font-mono text-sm font-bold uppercase tracking-widest text-[#5B3EC4] mb-6">Quick Links</h6>
+      <div class="flex flex-col space-y-3">
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="index.html">Home</a>
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="about.html">About</a>
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="services.html">Services</a>
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="how-it-works.html">How It Works</a>
+      </div>
+    </div>
+    <div>
+      <h6 class="font-mono text-sm font-bold uppercase tracking-widest text-[#5B3EC4] mb-6">More</h6>
+      <div class="flex flex-col space-y-3">
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="show-reel.html">Show Reel</a>
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="contact.html">Contact Us</a>
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="vendor-register.html">Register as a Vendor</a>
+      </div>
+    </div>
+    <div>
+      <h6 class="font-mono text-sm font-bold uppercase tracking-widest text-[#5B3EC4] mb-6">Registered Office</h6>
+      <p class="text-[#9B99B8] text-sm leading-relaxed">2nd Floor, Plot 264-265,<br/>Vaswani Chambers, Worli Colony,<br/>Mumbai – 400030</p>
+      <div class="mt-4 space-y-2">
+        <a href="tel:+919372785258" class="flex items-center gap-2 text-[#9B99B8] hover:text-[#F0EEF8] text-sm"><span class="material-symbols-outlined text-base text-[#5B3EC4]">call</span>+91 93727 85258</a>
+        <a href="mailto:info@policymotionlabs.com" class="flex items-center gap-2 text-[#9B99B8] hover:text-[#F0EEF8] text-sm"><span class="material-symbols-outlined text-base text-[#5B3EC4]">mail</span>info@policymotionlabs.com</a>
+        <div class="flex items-start gap-2 text-[#9B99B8] text-sm mt-2"><span class="material-symbols-outlined text-base text-[#5B3EC4]">schedule</span>Monday - Friday<br/>10 AM - 7 PM</div>
+      </div>
+    </div>
+  </div>
+  <div class="px-12 py-8 bg-[#0e0e0e] text-center">
+    <p class="text-[10px] font-mono text-[#9B99B8] uppercase tracking-[0.2em]">© 2026 Policy Motion Labs. Made in Bharat.</p>
+  </div>
+</footer>
+<script src="../js/shared-standalone.js"></script>
+<script type="module" src="../js/shared.js"></script>
+<script src="../js/interactive.js"></script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+* { font-weight: 700; }
+.material-symbols-outlined {
+  font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+  font-weight: normal;
+}
+.glass-card {
+  background: rgba(53, 53, 52, 0.4);
+  backdrop-filter: blur(12px);
+  transition: transform 300ms ease, backdrop-filter 300ms ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-8px);
+  backdrop-filter: blur(20px);
+}
+.bg-gradient-pml { background: linear-gradient(45deg, #5B3EC4, #1A7B47); }
+.text-gradient-pml {
+  background: linear-gradient(45deg, #5B3EC4, #1A7B47);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero-blob { filter: blur(80px); opacity: 0.15; }
+
+/* Light mode styling completely removed to enforce black theme */
+/* Animation Utilities */
+
+/* Button interactive class for micro-interactions */
+.btn-interactive {
+  transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.btn-interactive:hover {
+  transform: scale(1.05);
+}
+
+.btn-interactive:active {
+  transform: scale(0.95);
+}
+
+/* Remove will-change after interaction completes */
+.btn-interactive:not(:hover):not(:active) {
+  will-change: auto;
+}
+
+/* Will-change utilities for performance optimization */
+.will-change-transform {
+  will-change: transform;
+}
+
+.will-change-opacity {
+  will-change: opacity;
+}
+
+.will-change-auto {
+  will-change: auto;
+}
+
+/* Backdrop-filter fallback for unsupported browsers */
+@supports not (backdrop-filter: blur(12px)) {
+  .glass-card {
+    background: rgba(53, 53, 52, 0.85);
+  }
+  
+  html.light .glass-card {
+    background: rgba(220, 218, 210, 0.9) !important;
+  }
+}
+
+/* Accessibility - Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  .reduce-motion,
+  .btn-interactive,
+  .glass-card,
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Explicit reduce-motion class for manual application */
+.reduce-motion {
+  animation: none !important;
+  transition: none !important;
+}

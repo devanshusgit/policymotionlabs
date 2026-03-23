@@ -1,0 +1,396 @@
+/* ============================================
+   Immersive Website Enhancements - Animations
+   ============================================ */
+
+/* ============================================
+   Custom Cursor Styles
+   ============================================ */
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  pointer-events: none;
+  z-index: 9999;
+  transition: opacity 300ms ease;
+  will-change: transform;
+}
+
+.cursor-inner {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: linear-gradient(45deg, #5B3EC4, #1A7B47);
+  transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.custom-cursor.cursor-hover .cursor-inner {
+  transform: scale(1.5);
+}
+
+.custom-cursor.cursor-hidden {
+  opacity: 0.5;
+}
+
+/* ============================================
+   Scroll Animation Initial States
+   ============================================ */
+
+/* Fade-in animation initial state */
+[data-animate="fade-in"] {
+  opacity: 0;
+  transition: opacity 600ms ease;
+}
+
+/* Slide-up animation initial state */
+[data-animate="slide-up"] {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+
+/* ============================================
+   Scroll Animation Active States
+   ============================================ */
+
+/* Active state - visible and animated */
+[data-animate].animate-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Prevent re-animation after completion */
+[data-animate].animate-complete {
+  transition: none;
+}
+
+/* ============================================
+   Parallax Element Styles
+   ============================================ */
+
+[data-parallax] {
+  will-change: transform;
+}
+
+/* ============================================
+   Micro-Interaction: Button Styles
+   ============================================ */
+
+.btn-interactive {
+  transition: transform 200ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn-interactive:hover {
+  transform: scale(1.05);
+}
+
+.btn-interactive:active {
+  transform: scale(0.95);
+}
+
+/* ============================================
+   Micro-Interaction: Glass Card Hover
+   ============================================ */
+
+.glass-card {
+  transition: transform 300ms ease, backdrop-filter 300ms ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-8px);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+
+/* ============================================
+   Micro-Interaction: Navigation Link Underline
+   ============================================ */
+
+.nav-link {
+  position: relative;
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(45deg, #5B3EC4, #1A7B47);
+  transition: width 300ms ease;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ============================================
+   Micro-Interaction: Form Input Focus
+   ============================================ */
+
+input:focus,
+textarea:focus {
+  transition: border-color 200ms ease;
+  border-color: #5B3EC4;
+  outline: none;
+}
+
+/* ============================================
+   Accessibility: Keyboard Focus Indicators
+   ============================================ */
+
+/* Visible focus indicators for keyboard navigation */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+[role="button"]:focus-visible,
+[tabindex]:focus-visible {
+  outline: 3px solid #5B3EC4;
+  outline-offset: 2px;
+}
+
+/* Ensure animated elements maintain focus indicators */
+[data-animate]:focus-visible {
+  outline: 3px solid #5B3EC4;
+  outline-offset: 2px;
+}
+
+/* Focus indicators for interactive buttons */
+.btn-interactive:focus-visible {
+  outline: 3px solid #5B3EC4;
+  outline-offset: 2px;
+}
+
+/* Focus indicators for navigation links */
+.nav-link:focus-visible {
+  outline: 3px solid #5B3EC4;
+  outline-offset: 2px;
+}
+
+/* Focus indicators for glass cards when focusable */
+.glass-card:focus-visible {
+  outline: 3px solid #5B3EC4;
+  outline-offset: 2px;
+}
+
+/* ============================================
+   Keyframe Animations
+   ============================================ */
+
+/* Hero blob floating animation */
+@keyframes float {
+  0%, 100% {
+    transform: translate(0, 0) scale(1);
+  }
+  33% {
+    transform: translate(30px, -30px) scale(1.1);
+  }
+  66% {
+    transform: translate(-20px, 20px) scale(0.9);
+  }
+}
+
+/* Gradient position shift animation */
+@keyframes gradient-shift {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+/* ============================================
+   Animation Classes
+   ============================================ */
+
+/* Hero blob animation */
+.hero-blob {
+  animation: float 4s ease-in-out infinite alternate;
+}
+
+/* Gradient background animation */
+.bg-gradient-pml {
+  background-size: 200% 200%;
+  animation: gradient-shift 8s ease infinite;
+}
+
+/* ============================================
+   Accessibility: Reduced Motion Support
+   ============================================ */
+
+@media (prefers-reduced-motion: reduce) {
+  /* Disable all decorative animations */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  /* Disable hero blob animation */
+  .hero-blob {
+    animation: none !important;
+  }
+  
+  /* Disable gradient animation */
+  .bg-gradient-pml {
+    animation: none !important;
+  }
+  
+  /* Hide custom cursor */
+  .custom-cursor {
+    display: none !important;
+  }
+  
+  /* Show all content immediately */
+  [data-animate] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+/* ============================================
+   Responsive: Slow Connection Optimizations
+   ============================================ */
+
+.slow-connection .hero-blob,
+.slow-connection .bg-gradient-pml {
+  animation: none !important;
+}
+
+.slow-connection .custom-cursor {
+  display: none !important;
+}
+
+/* ============================================
+   Responsive: Touch Device Optimizations
+   ============================================ */
+
+@media (hover: none) and (pointer: coarse) {
+  /* Convert hover effects to tap-based interactions */
+  .btn-interactive:active {
+    transform: scale(1.05);
+  }
+  
+  .glass-card:active {
+    transform: translateY(-8px);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+  }
+  
+  /* Disable hover-only effects */
+  .btn-interactive:hover {
+    transform: none;
+  }
+  
+  .glass-card:hover {
+    transform: none;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+  
+  .nav-link:hover::after {
+    width: 0;
+  }
+}
+
+/* ============================================
+   Responsive: Hide Cursor on Mobile
+   ============================================ */
+
+@media (max-width: 768px), (hover: none) {
+  .custom-cursor {
+    display: none;
+  }
+}
+
+/* ============================================
+   Browser Compatibility: Fallbacks
+   ============================================ */
+
+/* Backdrop-filter fallback for unsupported browsers */
+.no-backdrop-filter .glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+}
+
+/* Transform fallback for unsupported browsers */
+.no-transform [data-animate="slide-up"] {
+  opacity: 0;
+  transform: none;
+  transition: opacity 600ms ease;
+}
+
+.no-transform [data-animate].animate-active {
+  opacity: 1;
+}
+
+.no-transform .btn-interactive:hover,
+.no-transform .btn-interactive:active {
+  transform: none;
+}
+
+.no-transform .glass-card:hover {
+  transform: none;
+}
+
+/* Vendor prefix support */
+.webkit-backdrop-filter .glass-card {
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.webkit-backdrop-filter .glass-card:hover {
+  -webkit-backdrop-filter: blur(20px);
+}
+
+.webkit-transform .custom-cursor {
+  -webkit-transform: translate(0, 0);
+}
+
+.webkit-transform [data-animate="slide-up"] {
+  -webkit-transform: translateY(40px);
+}
+
+.webkit-transform [data-animate].animate-active {
+  -webkit-transform: translateY(0);
+}
+
+.moz-transform .custom-cursor {
+  -moz-transform: translate(0, 0);
+}
+
+.moz-transform [data-animate="slide-up"] {
+  -moz-transform: translateY(40px);
+}
+
+.moz-transform [data-animate].animate-active {
+  -moz-transform: translateY(0);
+}
+
+.ms-transform .custom-cursor {
+  -ms-transform: translate(0, 0);
+}
+
+.ms-transform [data-animate="slide-up"] {
+  -ms-transform: translateY(40px);
+}
+
+.ms-transform [data-animate].animate-active {
+  -ms-transform: translateY(0);
+}
+
+/* ============================================
+   Infinite Marquee Keyframe
+   ============================================ */
+@keyframes pml-marquee-scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}

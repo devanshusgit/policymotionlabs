@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Register as a Vendor | Policy Motion Labs</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;700&family=DM+Mono&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;0,6..72,700;1,6..72,400&family=Manrope:wght@400;500;600&family=Space+Grotesk:wght@400;500;600&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+tailwind.config={darkMode:"class",theme:{extend:{colors:{"surface-container-highest":"#353534","surface-container-high":"#2a2a2a","surface-container":"#201f1f","surface":"#131313","outline-variant":"#484554","surface-container-low":"#1c1b1b","error":"#ffb4ab","on-surface":"#e5e2e1","on-background":"#e5e2e1","primary":"#cbbeff","on-primary":"#320099","background":"#131313","tertiary":"#edc14f","on-surface-variant":"#cac4d6","primary-container":"#5b3ec4","secondary":"#7fd99c","surface-container-lowest":"#0e0e0e","outline":"#938e9f"},fontFamily:{"headline":["Newsreader","Cormorant Garamond","serif"],"body":["Manrope","DM Sans","sans-serif"],"label":["Space Grotesk","DM Mono","monospace"]},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"}}}}
+</script>
+<link rel="stylesheet" href="../css/shared.css"/>
+<link rel="stylesheet" href="../css/animations.css"/>
+<link rel="stylesheet" href="../css/interactive.css"/>
+</head>
+<body data-page="" class="bg-background text-on-background font-body selection:bg-primary selection:text-on-primary">
+
+<nav class="fixed top-0 w-full z-50 bg-[#353534]/40 backdrop-blur-md shadow-[0_2px_40px_rgba(0,0,0,0.4)]">
+  <div class="flex justify-between items-center px-8 py-4 max-w-screen-2xl mx-auto">
+    <a href="index.html"><img alt="Policy Motion Labs" class="h-16 md:h-20 w-auto object-contain brightness-[0] invert-[1] opacity-90 drop-shadow-[0_0_12px_rgba(255,255,255,0.3)]" src="../assets/PML_LOGO.png"/></a>
+    <div class="hidden md:flex items-center space-x-8">
+      <a class="nav-link text-[#9B99B8] hover:text-[#F0EEF8] transition-colors font-mono text-xs uppercase tracking-widest" href="index.html">Home</a>
+      <a class="nav-link text-[#9B99B8] hover:text-[#F0EEF8] transition-colors font-mono text-xs uppercase tracking-widest" href="about.html">About</a>
+      <a class="nav-link text-[#9B99B8] hover:text-[#F0EEF8] transition-colors font-mono text-xs uppercase tracking-widest" href="services.html">Services</a>
+      <a class="nav-link text-[#9B99B8] hover:text-[#F0EEF8] transition-colors font-mono text-xs uppercase tracking-widest" href="how-it-works.html">How It Works</a>
+      <a class="nav-link text-[#9B99B8] hover:text-[#F0EEF8] transition-colors font-mono text-xs uppercase tracking-widest" href="show-reel.html">Show Reel</a>
+      <a class="nav-link text-[#9B99B8] hover:text-[#F0EEF8] transition-colors font-mono text-xs uppercase tracking-widest" href="contact.html">Contact Us</a>
+    </div>
+    <div class="flex items-center gap-3">
+      <a href="vendor-register.html" class="btn-interactive bg-gradient-pml text-white px-6 py-2 rounded-lg font-bold text-sm hover:scale-95 transition-all hidden md:inline-block">Register as a Vendor</a>
+    </div>
+  </div>
+</nav>
+
+<main class="min-h-screen pt-24 pb-20 px-8 relative overflow-hidden">
+  <!-- Background blobs -->
+  <div class="absolute top-1/4 left-0 w-96 h-96 bg-[#5B3EC4] hero-blob rounded-full pointer-events-none"></div>
+  <div class="absolute bottom-1/4 right-0 w-96 h-96 bg-[#1A7B47] hero-blob rounded-full pointer-events-none"></div>
+
+  <div class="max-w-3xl mx-auto relative z-10">
+
+    <!-- Header -->
+    <div class="text-center mb-16" data-animate="fade-in">
+      <span class="font-label text-[#C9A030] uppercase tracking-[0.3em] text-xs font-bold mb-4 block">Vendor Portal</span>
+      <h1 class="font-headline text-5xl md:text-6xl text-[#F0EEF8] leading-tight mb-6">Register as a Vendor</h1>
+      <p class="font-body text-[#9B99B8] text-lg max-w-xl mx-auto leading-relaxed">
+        Partner with Policy Motion Labs to deliver high-impact governance communication across India. Fill in your details and our team will reach out within 48 hours.
+      </p>
+    </div>
+
+    <!-- Form -->
+    <form class="glass-card rounded-2xl p-10 md:p-14 space-y-8" onsubmit="handleSubmit(event)" data-animate="slide-up">
+
+      <!-- Organisation Details -->
+      <div>
+        <h3 class="font-label text-[#5B3EC4] uppercase tracking-widest text-xs font-bold mb-6 flex items-center gap-2">
+          <span class="material-symbols-outlined text-base">business</span> Organisation Details
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label class="block font-label text-[#9B99B8] text-xs uppercase tracking-widest mb-2" for="org-name">Organisation Name *</label>
+            <input class="w-full bg-surface-container border border-[#484554] rounded-lg px-4 py-3 text-[#F0EEF8] text-sm focus:outline-none focus:border-[#5B3EC4] transition-colors" id="org-name" placeholder="e.g. Acme Media Pvt. Ltd." required type="text"/>
+          </div>
+          <div>
+            <label class="block font-label text-[#9B99B8] text-xs uppercase tracking-widest mb-2" for="org-type">Organisation Type *</label>
+            <select class="w-full bg-surface-container border border-[#484554] rounded-lg px-4 py-3 text-[#F0EEF8] text-sm focus:outline-none focus:border-[#5B3EC4] transition-colors" id="org-type" required>
+              <option value="" disabled selected>Select type</option>
+              <option>Production House</option>
+              <option>Animation Studio</option>
+              <option>Digital Agency</option>
+              <option>Freelance / Individual</option>
+              <option>Technology Partner</option>
+              <option>Translation / Localization</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div>
+            <label class="block font-label text-[#9B99B8] text-xs uppercase tracking-widest mb-2" for="gstin">GSTIN</label>
+            <input class="w-full bg-surface-container border border-[#484554] rounded-lg px-4 py-3 text-[#F0EEF8] text-sm focus:outline-none focus:border-[#5B3EC4] transition-colors" id="gstin" placeholder="22AAAAA0000A1Z5" type="text"/>
+          </div>
+          <div>
+            <label class="block font-label text-[#9B99B8] text-xs uppercase tracking-widest mb-2" for="years">Years in Operation *</label>
+            <input class="w-full bg-surface-container border border-[#484554] rounded-lg px-4 py-3 text-[#F0EEF8] text-sm focus:outline-none focus:border-[#5B3EC4] transition-colors" id="years" min="0" placeholder="e.g. 5" required type="number"/>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Details -->
+      <div>
+        <h3 class="font-label text-[#5B3EC4] uppercase tracking-widest text-xs font-bold mb-6 flex items-center gap-2">
+          <span class="material-symbols-outlined text-base">person</span> Primary Contact
+        </h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div>
+            <label class="block font-label text-[#9B99B8] text-xs uppercase tracking-widest mb-2" for="contact-name">Full Name *</label>
+            <input class="w-full bg-surface-container border border-[#484554] rounded-lg px-4 py-3 text-[#F0EEF8] text-sm focus:outline-none focus:border-[#5B3EC4] transition-colors" id="contact-name" placeholder="[name]" required type="text"/>
+          </div>
+          <div>
+            <label class="block font-label text-[#9B99B8] text-xs uppercase tracking-widest mb-2" for="designation">Designation *</label>
+            <input class="w-full bg-surface-container border border-[#484554] rounded-lg px-4 py-3 text-[#F0EEF8] text-sm focus:outline-none focus:border-[#5B3EC4] transition-colors" id="designation" placeholder="e.g. Director, CEO" required type="text"/>
+          </div>
+          <div>
+            <label class="block font-label text-[#9B99B8] text-xs uppercase tracking-widest mb-2" for="email">Email Address *</label>
+            <input class="w-full bg-surface-container border border-[#484554] rounded-lg px-4 py-3 text-[#F0EEF8] text-sm focus:outline-none focus:border-[#5B3EC4] transition-colors" id="email" placeholder="[email]" required type="email"/>
+          </div>
+          <div>
+            <label class="block font-label text-[#9B99B8] text-xs uppercase tracking-widest mb-2" for="phone">Phone Number *</label>
+            <input class="w-full bg-surface-container border border-[#484554] rounded-lg px-4 py-3 text-[#F0EEF8] text-sm focus:outline-none focus:border-[#5B3EC4] transition-colors" id="phone" placeholder="+91 [phone_number]" required type="tel"/>
+          </div>
+        </div>
+      </div>
+
+      <!-- Services Offered -->
+      <div>
+        <h3 class="font-label text-[#5B3EC4] uppercase tracking-widest text-xs font-bold mb-6 flex items-center gap-2">
+          <span class="material-symbols-outlined text-base">category</span> Services Offered
+        </h3>
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input class="accent-[#5B3EC4] w-4 h-4" type="checkbox" value="video-production"/>
+            <span class="text-[#9B99B8] text-sm group-hover:text-[#F0EEF8] transition-colors">Video Production</span>
+          </label>
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input class="accent-[#5B3EC4] w-4 h-4" type="checkbox" value="animation"/>
+            <span class="text-[#9B99B8] text-sm group-hover:text-[#F0EEF8] transition-colors">Animation</span>
+          </label>
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input class="accent-[#5B3EC4] w-4 h-4" type="checkbox" value="voiceover"/>
+            <span class="text-[#9B99B8] text-sm group-hover:text-[#F0EEF8] transition-colors">Voice Over</span>
+          </label>
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input class="accent-[#5B3EC4] w-4 h-4" type="checkbox" value="translation"/>
+            <span class="text-[#9B99B8] text-sm group-hover:text-[#F0EEF8] transition-colors">Translation / Localization</span>
+          </label>
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input class="accent-[#5B3EC4] w-4 h-4" type="checkbox" value="social-media"/>
+            <span class="text-[#9B99B8] text-sm group-hover:text-[#F0EEF8] transition-colors">Social Media</span>
+          </label>
+          <label class="flex items-center gap-3 cursor-pointer group">
+            <input class="accent-[#5B3EC4] w-4 h-4" value="technology"/>
+            <span class="text-[#9B99B8] text-sm group-hover:text-[#F0EEF8] transition-colors">Technology / AI</span>
+          </label>
+        </div>
+      </div>
+
+      <!-- Portfolio / Message -->
+      <div>
+        <h3 class="font-label text-[#5B3EC4] uppercase tracking-widest text-xs font-bold mb-6 flex items-center gap-2">
+          <span class="material-symbols-outlined text-base">description</span> Additional Information
+        </h3>
+        <div class="space-y-6">
+          <div>
+            <label class="block font-label text-[#9B99B8] text-xs uppercase tracking-widest mb-2" for="portfolio">Portfolio / Website URL</label>
+            <input class="w-full bg-surface-container border border-[#484554] rounded-lg px-4 py-3 text-[#F0EEF8] text-sm focus:outline-none focus:border-[#5B3EC4] transition-colors" id="portfolio" placeholder="https://yourwebsite.com" type="url"/>
+          </div>
+          <div>
+            <label class="block font-label text-[#9B99B8] text-xs uppercase tracking-widest mb-2" for="message">Tell us about your work *</label>
+            <textarea class="w-full bg-surface-container border border-[#484554] rounded-lg px-4 py-3 text-[#F0EEF8] text-sm focus:outline-none focus:border-[#5B3EC4] transition-colors resize-none" id="message" placeholder="Briefly describe your capabilities, past government projects, and why you'd like to partner with Policy Motion Labs..." required rows="5"></textarea>
+          </div>
+        </div>
+      </div>
+
+      <!-- Submit -->
+      <div class="pt-4">
+        <button class="btn-interactive w-full bg-gradient-pml text-white py-4 rounded-lg font-bold text-lg hover:scale-[1.02] transition-transform shadow-2xl shadow-[#5B3EC4]/20" type="submit">
+          Submit Vendor Application
+        </button>
+        <p class="text-center text-[#9B99B8] text-xs mt-4">By submitting, you agree to our terms. Our team will review and respond within 48 hours.</p>
+      </div>
+
+    </form>
+
+    <!-- Success Message (hidden by default) -->
+    <div class="hidden glass-card rounded-2xl p-16 text-center mt-8" id="success-msg">
+      <span class="material-symbols-outlined text-[#1A7B47] text-6xl mb-6 block" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+      <h2 class="font-headline text-4xl text-[#F0EEF8] mb-4">Application Received</h2>
+      <p class="text-[#9B99B8] text-lg mb-8">Thank you for your interest in partnering with Policy Motion Labs. Our team will reach out within 48 hours.</p>
+      <a class="inline-block border border-[#5B3EC4] text-[#F0EEF8] px-8 py-3 rounded-md font-bold hover:bg-[#5B3EC4]/10 transition-all" href="index.html">Back to Home</a>
+    </div>
+
+  </div>
+</main>
+
+<footer class="bg-[#131313] w-full">
+  <div class="grid grid-cols-1 md:grid-cols-4 gap-12 px-12 py-20 border-t border-[#484554]/15 max-w-screen-2xl mx-auto">
+    <div>
+      <img alt="Policy Motion Labs" class="h-24 md:h-32 w-auto object-contain mb-6" src="../assets/PML_LOGO.png"/>
+      <p class="text-[#9B99B8] text-sm leading-relaxed max-w-xs">Advancing democratic communication through high-fidelity storytelling and indigenous technology.</p>
+    </div>
+    <div>
+      <h6 class="font-mono text-sm font-bold uppercase tracking-widest text-[#5B3EC4] mb-6">Quick Links</h6>
+      <div class="flex flex-col space-y-3">
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="index.html">Home</a>
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="about.html">About</a>
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="services.html">Services</a>
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="how-it-works.html">How It Works</a>
+      </div>
+    </div>
+    <div>
+      <h6 class="font-mono text-sm font-bold uppercase tracking-widest text-[#5B3EC4] mb-6">More</h6>
+      <div class="flex flex-col space-y-3">
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="show-reel.html">Show Reel</a>
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="contact.html">Contact Us</a>
+        <a class="text-[#9B99B8] hover:text-[#F0EEF8] text-sm" href="vendor-register.html">Register as a Vendor</a>
+      </div>
+    </div>
+    <div>
+      <h6 class="font-mono text-sm font-bold uppercase tracking-widest text-[#5B3EC4] mb-6">Registered Office</h6>
+      <p class="text-[#9B99B8] text-sm leading-relaxed">2nd Floor, Plot 264-265,<br/>Vaswani Chambers, Worli Colony,<br/>Mumbai – 400030</p>
+      <div class="mt-4 space-y-2">
+        <a href="tel:+919372785258" class="flex items-center gap-2 text-[#9B99B8] hover:text-[#F0EEF8] text-sm"><span class="material-symbols-outlined text-base text-[#5B3EC4]">call</span>+91 93727 85258</a>
+        <a href="mailto:info@policymotionlabs.com" class="flex items-center gap-2 text-[#9B99B8] hover:text-[#F0EEF8] text-sm"><span class="material-symbols-outlined text-base text-[#5B3EC4]">mail</span>info@policymotionlabs.com</a>
+        <div class="flex items-start gap-2 text-[#9B99B8] text-sm mt-2"><span class="material-symbols-outlined text-base text-[#5B3EC4]">schedule</span>Monday - Friday<br/>10 AM - 7 PM</div>
+      </div>
+    </div>
+  </div>
+  <div class="px-12 py-8 bg-[#0e0e0e] text-center">
+    <p class="text-[10px] font-mono text-[#9B99B8] uppercase tracking-[0.2em]">© 2026 Policy Motion Labs. Made in Bharat.</p>
+  </div>
+</footer>
+<script src="../js/shared-standalone.js"></script>
+<script type="module" src="../js/shared.js"></script>
+<script>
+  function handleSubmit(e) {
+    e.preventDefault();
+    
+    // Extract form data
+    const orgName = document.getElementById('org-name').value || '';
+    const orgType = document.getElementById('org-type').value || '';
+    const gstin = document.getElementById('gstin').value || 'N/A';
+    const years = document.getElementById('years').value || '';
+    
+    const contactName = document.getElementById('contact-name').value || '';
+    const designation = document.getElementById('designation').value || '';
+    const email = document.getElementById('email').value || '';
+    const phone = document.getElementById('phone').value || '';
+    
+    const checkboxes = document.querySelectorAll('input[type="checkbox"]:checked');
+    const services = Array.from(checkboxes).map(cb => cb.nextElementSibling.textContent.trim()).join(', ') || 'None selected';
+    
+    const portfolio = document.getElementById('portfolio').value || 'N/A';
+    const message = document.getElementById('message').value || '';
+    
+    // Construct email body
+    const bodyText = `New Vendor Registration
+
+ORGANISATION DETAILS
+--------------------
+Name: ${orgName}
+Type: ${orgType}
+GSTIN: ${gstin}
+Years in Operation: ${years}
+
+PRIMARY CONTACT
+---------------
+Name: ${contactName}
+Designation: ${designation}
+Email: ${email}
+Phone: ${phone}
+
+SERVICES OFFERED
+----------------
+${services}
+
+ADDITIONAL INFO
+---------------
+Portfolio: ${portfolio}
+Message: 
+${message}`;
+
+    // Trigger Mailto
+    const emailSubject = encodeURIComponent(`New Vendor Registration: ${orgName}`);
+    const emailBody = encodeURIComponent(bodyText);
+    window.location.href = `mailto:info@policymotionlabs.com?subject=${emailSubject}&body=${emailBody}`;
+
+    // Show success state
+    const form = document.querySelector('form');
+    if (form) form.style.display = 'none';
+    
+    const successMsg = document.getElementById('success-msg');
+    if (successMsg) {
+      successMsg.classList.remove('hidden');
+      successMsg.style.display = 'block';
+    }
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+<script src="../js/interactive.js"></script>
+</body>
+</html>
